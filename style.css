@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1:#2952B3;
+    --cor2:#364466;
+    --cor3:#366BE6;
+    --cor4:#7C9DEA;
+    --cor5:#172F66;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android:  'Inconsolata', monospace;
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+p{
+    margin: 15px 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    min-height: 180px;
+    text-align: center
+    
+}
+
+header>h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    padding: 20px;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+header>p{
+    color: white;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+}
+
+nav>a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+
+nav>a:hover{
+    background-color: var(--cor4);
+    border-radius: 5px;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    max-width: 1000px;
+    min-height: 300px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-padrao);
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+
+main strong{
+    color: #172F66;
+}
+
+main a{
+    text-decoration: none;
+    font: bold;
+    color: #002333;
+    background-color: #2952b35b;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+main h1{
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    color: var(--cor5);
+    }
+
+main h2{
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    color: var(--cor5);
+}
+
+aside{
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside>h3{
+    background-color: #172F66;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside>ul{
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+    text-align: center;
+    padding-bottom: 2px;
+    font-family: var(--fonte-destaque);
+}
